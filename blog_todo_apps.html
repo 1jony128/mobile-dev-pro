@@ -395,6 +395,31 @@
             left: 100%;
         }
 
+        /* App links */
+        .app-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.6rem;
+            margin-top: 0.8rem;
+        }
+        .link-btn {
+            display: inline-block;
+            padding: 8px 14px;
+            border-radius: 999px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            text-decoration: none;
+            color: #fff;
+            background: rgba(255,255,255,0.08);
+            border: 1px solid rgba(255,255,255,0.15);
+            transition: all .25s ease;
+        }
+        .link-btn:hover {
+            transform: translateY(-2px);
+            background: linear-gradient(135deg, #00d4ff, #ff00ff);
+            box-shadow: 0 10px 24px rgba(0,212,255,0.25);
+        }
+
         /* Footer */
         footer {
             padding: 3rem 0;
@@ -526,7 +551,9 @@
                         <div class="app-rank">1</div>
                         <div class="app-info">
                             <div class="app-screenshot" style="float: right; margin-left: 1rem; margin-bottom: 1rem;">
-                                <img src="https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=300&h=200&fit=crop&crop=entropy" alt="Todoist интерфейс" style="width: 250px; height: 150px; object-fit: cover; border-radius: 10px; border: 1px solid rgba(255,255,255,0.2);">
+                                <a href="https://todoist.com/" target="_blank" rel="noopener">
+                                    <img src="https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=300&h=200&fit=crop&crop=entropy" alt="Todoist — скриншот интерфейса" style="width: 250px; height: 150px; object-fit: cover; border-radius: 10px; border: 1px solid rgba(255,255,255,0.2);">
+                                </a>
                             </div>
                             <h3>Todoist</h3>
                             <p>
@@ -542,6 +569,11 @@
                                 <li>Подробная аналитика продуктивности</li>
                                 <li>Интеграция с Google Calendar</li>
                             </ul>
+                            <div class="app-links">
+                                <a class="link-btn" href="https://todoist.com/" target="_blank" rel="noopener">Сайт</a>
+                                <a class="link-btn" href="https://apps.apple.com/app/todoist-to-do-list-tasks/id572688855" target="_blank" rel="noopener">App Store</a>
+                                <a class="link-btn" href="https://play.google.com/store/apps/details?id=com.todoist" target="_blank" rel="noopener">Google Play</a>
+                            </div>
                             <div class="app-rating">⭐ 9.8/10</div>
                         </div>
                     </li>
@@ -551,7 +583,9 @@
                         <div class="app-rank">2</div>
                         <div class="app-info">
                             <div class="app-screenshot" style="float: right; margin-left: 1rem; margin-bottom: 1rem;">
-                                <img src="https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=300&h=200&fit=crop&crop=entropy" alt="TodoGTD интерфейс" style="width: 250px; height: 150px; object-fit: cover; border-radius: 10px; border: 1px solid rgba(255,255,255,0.2);">
+                                <a href="/index.html#contact">
+                                    <img src="https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=300&h=200&fit=crop&crop=entropy" alt="TodoGTD — скриншот интерфейса" style="width: 250px; height: 150px; object-fit: cover; border-radius: 10px; border: 1px solid rgba(255,255,255,0.2);">
+                                </a>
                             </div>
                             <h3>TodoGTD</h3>
                             <p>
@@ -569,6 +603,10 @@
                                 <li>Смарт-напоминания на основе контекста</li>
                                 <li>Синхронизация между всеми устройствами</li>
                             </ul>
+                            <div class="app-links">
+                                <a class="link-btn" href="/index.html#contact">Сайт/Контакты</a>
+                                <a class="link-btn" href="https://t.me/evgeny_todogtd" target="_blank" rel="noopener">Telegram</a>
+                            </div>
                             <div class="app-rating">⭐ 9.5/10</div>
                         </div>
                     </li>
@@ -577,7 +615,9 @@
                         <div class="app-rank">3</div>
                         <div class="app-info">
                             <div class="app-screenshot" style="float: right; margin-left: 1rem; margin-bottom: 1rem;">
-                                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=300&h=200&fit=crop&crop=entropy" alt="Notion интерфейс" style="width: 250px; height: 150px; object-fit: cover; border-radius: 10px; border: 1px solid rgba(255,255,255,0.2);">
+                                <a href="https://www.notion.so/" target="_blank" rel="noopener">
+                                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=300&h=200&fit=crop&crop=entropy" alt="Notion — скриншот интерфейса" style="width: 250px; height: 150px; object-fit: cover; border-radius: 10px; border: 1px solid rgba(255,255,255,0.2);">
+                                </a>
                             </div>
                             <h3>Notion</h3>
                             <p>
@@ -590,6 +630,11 @@
                                 <li>Коллаборация в реальном времени</li>
                                 <li>Интеграция с 100+ сервисами</li>
                             </ul>
+                            <div class="app-links">
+                                <a class="link-btn" href="https://www.notion.so/" target="_blank" rel="noopener">Сайт</a>
+                                <a class="link-btn" href="https://apps.apple.com/app/notion-notes-docs-tasks/id1232780281" target="_blank" rel="noopener">App Store</a>
+                                <a class="link-btn" href="https://play.google.com/store/apps/details?id=notion.id" target="_blank" rel="noopener">Google Play</a>
+                            </div>
                             <div class="app-rating">⭐ 9.2/10</div>
                         </div>
                     </li>
@@ -598,7 +643,9 @@
                         <div class="app-rank">4</div>
                         <div class="app-info">
                             <div class="app-screenshot" style="float: right; margin-left: 1rem; margin-bottom: 1rem;">
-                                <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=300&h=200&fit=crop&crop=entropy" alt="Things 3 интерфейс" style="width: 250px; height: 150px; object-fit: cover; border-radius: 10px; border: 1px solid rgba(255,255,255,0.2);">
+                                <a href="https://culturedcode.com/things/" target="_blank" rel="noopener">
+                                    <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=300&h=200&fit=crop&crop=entropy" alt="Things 3 — скриншот интерфейса" style="width: 250px; height: 150px; object-fit: cover; border-radius: 10px; border: 1px solid rgba(255,255,255,0.2);">
+                                </a>
                             </div>
                             <h3>Things 3</h3>
                             <p>
@@ -611,6 +658,10 @@
                                 <li>Поддержка виджетов и Shortcuts</li>
                                 <li>Планирование "Когда-нибудь/Может быть"</li>
                             </ul>
+                            <div class="app-links">
+                                <a class="link-btn" href="https://culturedcode.com/things/" target="_blank" rel="noopener">Сайт</a>
+                                <a class="link-btn" href="https://apps.apple.com/app/things-3/id904237743" target="_blank" rel="noopener">App Store</a>
+                            </div>
                             <div class="app-rating">⭐ 9.0/10</div>
                         </div>
                     </li>
@@ -619,7 +670,9 @@
                         <div class="app-rank">5</div>
                         <div class="app-info">
                             <div class="app-screenshot" style="float: right; margin-left: 1rem; margin-bottom: 1rem;">
-                                <img src="https://images.unsplash.com/photo-1581291518857-4e27b48ff07e?w=300&h=200&fit=crop&crop=entropy" alt="TickTick интерфейс" style="width: 250px; height: 150px; object-fit: cover; border-radius: 10px; border: 1px solid rgba(255,255,255,0.2);">
+                                <a href="https://ticktick.com/" target="_blank" rel="noopener">
+                                    <img src="https://images.unsplash.com/photo-1581291518857-4e27b48ff07e?w=300&h=200&fit=crop&crop=entropy" alt="TickTick — скриншот интерфейса" style="width: 250px; height: 150px; object-fit: cover; border-radius: 10px; border: 1px solid rgba(255,255,255,0.2);">
+                                </a>
                             </div>
                             <h3>TickTick</h3>
                             <p>
@@ -632,6 +685,11 @@
                                 <li>Привычки и повторяющиеся задачи</li>
                                 <li>Белый шум для концентрации</li>
                             </ul>
+                            <div class="app-links">
+                                <a class="link-btn" href="https://ticktick.com/" target="_blank" rel="noopener">Сайт</a>
+                                <a class="link-btn" href="https://apps.apple.com/app/ticktick-to-do-list-calendar/id626144601" target="_blank" rel="noopener">App Store</a>
+                                <a class="link-btn" href="https://play.google.com/store/apps/details?id=com.ticktick.task" target="_blank" rel="noopener">Google Play</a>
+                            </div>
                             <div class="app-rating">⭐ 8.8/10</div>
                         </div>
                     </li>

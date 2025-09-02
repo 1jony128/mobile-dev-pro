@@ -1,0 +1,16 @@
+{
+  "name": "mobile-developer-site",
+  "version": "1.0.0",
+  "description": "Static mobile developer website",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx serve -s . -p $PORT",
+    "build": "echo 'Static site - no build needed'"
+  },
+  "dependencies": {
+    "serve": "^14.2.1"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}

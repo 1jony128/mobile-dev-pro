@@ -1,3 +1,4 @@
 # Redirect favicon.ico to SVG (Netlify)
 /favicon.ico  /favicon.svg  301!
 
+

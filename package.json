@@ -1,11 +1,11 @@
 {
   "name": "mobile-developer-site",
   "version": "1.0.0",
-  "description": "Mobile developer website with Express server",
+  "description": "Mobile developer website",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "build": "echo 'Static site - copying files' && mkdir -p dist && cp -r *.html *.png *.svg *.xml *.txt dist/ 2>/dev/null || true",
+    "build": "echo 'Building static site...' && mkdir -p dist && cp -r src/* dist/ && echo 'Build complete!'",
     "dev": "nodemon server.js"
   },
   "dependencies": {

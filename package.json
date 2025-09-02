@@ -1,11 +1,5 @@
 {
   "name": "mobile-developer-site",
   "version": "1.0.0",
-  "description": "Static mobile developer website",
-  "scripts": {
-    "build": "echo 'Building static site...' && mkdir -p dist && cp -r src/* dist/ && echo 'Build complete!'"
-  },
-  "engines": {
-    "node": ">=16.0.0"
-  }
+  "description": "Static mobile developer website"
 }

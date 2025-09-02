@@ -1,5 +1,8 @@
 User-agent: *
 Allow: /
 
+# Главный адрес сайта (без www)
+Host: https://mobile-app-development.ru
+
 Sitemap: https://mobile-app-development.ru/sitemap.xml
 

@@ -1,13 +1,22 @@
-FROM nginx:alpine
+FROM node:18-alpine
 
-# Копируем статические файлы
-COPY . /usr/share/nginx/html/
+# Устанавливаем рабочую директорию
+WORKDIR /app
 
-# Копируем конфигурацию nginx
-COPY nginx.conf /etc/nginx/nginx.conf
+# Копируем package.json и package-lock.json
+COPY package*.json ./
+
+# Устанавливаем зависимости
+RUN npm install
+
+# Копируем все файлы проекта
+COPY . .
+
+# Собираем проект
+RUN npm run build
 
 # Открываем порт
-EXPOSE 80
+EXPOSE 3000
 
-# Запускаем nginx
-CMD ["nginx", "-g", "daemon off;"]
+# Запускаем приложение
+CMD ["npm", "start"]

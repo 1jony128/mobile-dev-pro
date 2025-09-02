@@ -1,14 +1,19 @@
 {
   "name": "mobile-developer-site",
   "version": "1.0.0",
-  "description": "Static mobile developer website",
-  "main": "index.html",
+  "description": "Mobile developer website with Express server",
+  "main": "server.js",
   "scripts": {
-    "start": "npx serve -s . -p $PORT",
-    "build": "echo 'Static site - no build needed'"
+    "start": "node server.js",
+    "build": "echo 'Static site - copying files' && mkdir -p dist && cp -r *.html *.png *.svg *.xml *.txt dist/ 2>/dev/null || true",
+    "dev": "nodemon server.js"
   },
   "dependencies": {
-    "serve": "^14.2.1"
+    "express": "^4.18.2",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
   },
   "engines": {
     "node": ">=16.0.0"

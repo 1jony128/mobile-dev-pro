@@ -1,0 +1,11 @@
+# Перенаправление с www на адрес без www
+https://www.mobile-app-development.ru/* https://mobile-app-development.ru/:splat 301!
+http://www.mobile-app-development.ru/* https://mobile-app-development.ru/:splat 301!
+
+# Принудительное использование HTTPS
+http://mobile-app-development.ru/* https://mobile-app-development.ru/:splat 301!
+
+# Redirect favicon.ico to SVG (Netlify)
+/favicon.ico  /favicon.svg  301!
+
+

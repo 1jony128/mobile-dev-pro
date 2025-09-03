@@ -1,6 +1,0 @@
-{
-  "name": "mobile-developer-site",
-  "scripts": {
-    "build": "mkdir -p dist && cp -r * dist/"
-  }
-}

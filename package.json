@@ -1,6 +1,6 @@
 {
   "name": "mobile-developer-site",
   "scripts": {
-    "build": "mkdir -p dist && cp -r * dist/"
+    "build": "rm -rf dist && mkdir -p dist && cp -r *.html *.png *.svg *.xml *.txt dist/"
   }
 }

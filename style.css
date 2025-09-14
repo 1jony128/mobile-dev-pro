@@ -912,6 +912,61 @@ footer {
         font-size: 0.6rem;
         padding: 4px 6px;
     }
+    
+    /* Улучшения для phone-mockup в мобильной версии */
+    .example-phone-mockup {
+        width: 200px !important;
+        height: 400px !important;
+        margin: 0 auto 20px auto !important;
+        display: block !important;
+        opacity: 1 !important;
+        visibility: visible !important;
+    }
+    
+    .example-card {
+        text-align: center;
+        padding: 20px 10px;
+    }
+    
+    .example-header {
+        margin-top: 15px;
+    }
+    
+    .example-header h3 {
+        font-size: 1.2rem;
+    }
+    
+    /* Уменьшаем размеры телефонов для мобильных */
+    .service-phone,
+    .ecommerce-phone,
+    .fitness-phone,
+    .food-phone,
+    .social-phone,
+    .iot-phone {
+        transform: scale(0.8);
+        transform-origin: center;
+    }
+    
+    /* Убираем 3D эффекты на мобильных */
+    .service-phone:hover,
+    .ecommerce-phone:hover,
+    .fitness-phone:hover,
+    .food-phone:hover,
+    .social-phone:hover,
+    .iot-phone:hover {
+        transform: scale(0.8);
+    }
+    
+    /* Анимации появления для мобильных */
+    .service-phone-container,
+    .ecommerce-phone-container,
+    .fitness-phone-container,
+    .food-phone-container,
+    .social-phone-container,
+    .iot-phone-container {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
 }
 
 /* Service Marketplace Animation Styles */

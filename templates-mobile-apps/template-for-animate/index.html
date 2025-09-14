@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Анимация создания заказа</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="phone-container">
+        <div class="phone">
+            <!-- Статус бар -->
+            <div class="status-bar">
+                <span class="time">9:41</span>
+                <div class="status-icons">
+                    <div class="signal"></div>
+                    <div class="wifi"></div>
+                    <div class="battery"></div>
+                </div>
+            </div>
+
+            <!-- Главная страница: Мои заказы -->
+            <div class="screen screen-0 active">
+                <div class="search-section">
+                    <div class="search-bar">
+                        <input type="text" placeholder="Укладка плитки..." class="search-input">
+                        <button class="search-btn">🔍</button>
+                    </div>
+                </div>
+
+                <div class="main-content">
+                    <h1 class="page-title">Мои заказы</h1>
+                    
+                    <div class="empty-state">
+                        <div class="tablet-illustration">
+                            <div class="tablet">
+                                <div class="tablet-screen">
+                                    <div class="search-icon">🔍</div>
+                                    <div class="mountain-icon">🏔️</div>
+                                    <div class="profile-icon">👤</div>
+                                    <div class="settings-icon">⚙️</div>
+                                </div>
+                            </div>
+                            <div class="chat-bubble">...</div>
+                            <div class="question-mark">?</div>
+                        </div>
+                        
+                        <div class="empty-text">
+                            <h2>Пока пусто</h2>
+                            <p>Здесь будет список Ваших активных заказов</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="create-order-btn">Создать заказ</div>
+            </div>
+
+            <!-- Экран 1: Создание заказа -->
+            <div class="screen screen-1">
+                <div class="nav-bar">
+                    <div class="back-btn">← Назад</div>
+                    <div class="title">Создание заказа</div>
+                </div>
+
+                <div class="image-selector">
+                    <div class="image-thumb" data-selected="false">
+                        <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjYwIiBoZWlnaHQ9IjYwIiByeD0iOCIgZmlsbD0iI0Y1RjVGNyIvPgo8Y2lyY2xlIGN4PSIzMCIgY3k9IjIwIiByPSI4IiBmaWxsPSIjRkZDNzAwIi8+CjxwYXRoIGQ9Ik0xNSAzNUw0NSAzNSIgc3Ryb2tlPSIjRkZDNzAwIiBzdHJva2Utd2lkdGg9IjIiLz4KPHBhdGggZD0iTTE1IDQ1TDQ1IDQ1IiBzdHJva2U9IiNGRkM3MDAiIHN0cm9rZS13aWR0aD0iMiIvPgo8L3N2Zz4K" alt="Фото 1">
+                        <div class="select-circle"></div>
+                    </div>
+                    <div class="image-thumb" data-selected="false">
+                        <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjYwIiBoZWlnaHQ9IjYwIiByeD0iOCIgZmlsbD0iI0Y1RjVGNyIvPgo8Y2lyY2xlIGN4PSIzMCIgY3k9IjIwIiByPSIxMCIgZmlsbD0iIzRDRjU2MSIvPgo8cGF0aCBkPSJNMTAgMzBMMjAgMjBMMzAgMzBMMzUgMjVMNDAgMzBMNTAgMjAiIHN0cm9rZT0iIzRDRjU2MSIgc3Ryb2tlLXdpZHRoPSIyIi8+Cjwvc3ZnPgo=" alt="Фото 2">
+                        <div class="select-circle"></div>
+                    </div>
+                    <div class="image-thumb" data-selected="false">
+                        <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjYwIiBoZWlnaHQ9IjYwIiByeD0iOCIgZmlsbD0iI0Y1RjVGNyIvPgo8cmVjdCB4PSIxNSIgeT0iMTUiIHdpZHRoPSIzMCIgaGVpZ2h0PSI0MCIgcng9IjQiIGZpbGw9IiM5Q0EzQUYiLz4KPHJlY3QgeD0iMTgiIHk9IjE4IiB3aWR0aD0iMjQiIGhlaWdodD0iMzQiIHJ4PSIyIiBmaWxsPSIjRkZGRkZGIi8+Cjwvc3ZnPgo=" alt="Фото 3">
+                        <div class="select-circle"></div>
+                    </div>
+                    <div class="image-thumb" data-selected="false">
+                        <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjYwIiBoZWlnaHQ9IjYwIiByeD0iOCIgZmlsbD0iI0Y1RjVGNyIvPgo8Y2lyY2xlIGN4PSIzMCIgY3k9IjIwIiByPSIxNSIgZmlsbD0iI0ZGNzM0QyIvPgo8cGF0aCBkPSJNMTAgMzBMMjAgMjBMMzAgMzBMMzUgMjVMNDAgMzBMNTAgMjAiIHN0cm9rZS13aWR0aD0iMyIvPgo8L3N2Zz4K" alt="Фото 4">
+                        <div class="select-circle"></div>
+                    </div>
+                </div>
+
+                <div class="form-fields">
+                    <input type="text" placeholder="Краткое название" class="input-field" id="title-input">
+                    <textarea placeholder="Описание" class="input-field textarea" id="description-input"></textarea>
+                    <div class="input-field select-field">
+                        <span>Категория</span>
+                        <span class="arrow">→</span>
+                    </div>
+                    <input type="text" placeholder="Когда должно быть сделано?" class="input-field">
+                    
+                    <div class="date-buttons">
+                        <div class="date-btn active">Сегодня</div>
+                        <div class="date-btn">Завтра</div>
+                        <div class="date-btn">Другое</div>
+                    </div>
+
+                    <div class="checkbox-field">
+                        <div class="checkbox"></div>
+                        <span>К определённому часу</span>
+                    </div>
+
+                    <input type="text" placeholder="Стоимость работы:" class="input-field">
+                    
+                    <div class="checkbox-field">
+                        <div class="checkbox"></div>
+                        <span>Обсуждаемая цена</span>
+                    </div>
+
+                    <input type="text" placeholder="Адрес" class="input-field">
+                </div>
+
+                <div class="continue-btn">Продолжить</div>
+            </div>
+
+            <!-- Экран 2: Заказ опубликован -->
+            <div class="screen screen-2">
+                <div class="success-content">
+                    <h2>Заказ опубликован!</h2>
+                    <p>Ожидайте откликов от исполнителей</p>
+                    
+                    <div class="hourglass-animation">
+                        <div class="hourglass">
+                            <div class="top-bulb">
+                                <div class="sand"></div>
+                            </div>
+                            <div class="middle"></div>
+                            <div class="bottom-bulb">
+                                <div class="sand-falling"></div>
+                            </div>
+                        </div>
+                        <div class="message-bubble">↓</div>
+                        <div class="stars">
+                            <span>✦</span>
+                            <span>✦</span>
+                            <span>✦</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="continue-btn">Продолжить</div>
+                </div>
+            </div>
+
+            <!-- Экран 3: Чат -->
+            <div class="screen screen-3">
+                <div class="nav-bar">
+                    <div class="back-btn">← Назад</div>
+                    <div class="title">Константин Констант...</div>
+                    <div class="profile-pic">👨</div>
+                </div>
+
+                <div class="chat-content">
+                    <div class="message system-message">
+                        <p>Пользователь Андрей Соколов назначил пользователя Константин Констанипольский исполнителем заказа "Сборка Стола"</p>
+                        <div class="message-images">
+                            <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHZpZXdCb3g9IjAgMCA0MCA0MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjQwIiBoZWlnaHQ9IjQwIiByeD0iNCIgZmlsbD0iI0Y1RjVGNyIvPgo8cmVjdCB4PSI1IiB5PSI1IiB3aWR0aD0iMzAiIGhlaWdodD0iMzAiIHJ4PSIyIiBmaWxsPSIjRDdDNEIwIi8+Cjwvc3ZnPgo=" alt="Фото 1">
+                            <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjYwIiBoZWlnaHQ9IjYwIiByeD0iOCIgZmlsbD0iI0Y1RjVGNyIvPgo8cmVjdCB4PSI1IiB5PSI1IiB3aWR0aD0iMzAiIGhlaWdodD0iMzAiIHJ4PSIyIiBmaWxsPSIjRkZGRkZGIi8+Cjwvc3ZnPgo=" alt="Фото 2">
+                        </div>
+                    </div>
+                    
+                    <div class="message other-message">
+                        <p>Привет! Готов приступить к работе</p>
+                    </div>
+                    
+                    <div class="message user-message">
+                        <p>Отлично! Когда сможешь начать?</p>
+                    </div>
+                    
+                    <div class="message other-message">
+                        <p>Завтра утром в 9:00</p>
+                    </div>
+                    
+                    <div class="message other-message">
+                        <p>Идеально! Работа выполнена, всё готово 👍</p>
+                    </div>
+                </div>
+
+                <div class="chat-input">
+                    <input type="text" placeholder="Сообщение" class="message-input">
+                    <div class="mic-btn">🎤</div>
+                </div>
+
+                <div class="continue-btn">Завершить заказ</div>
+            </div>
+
+            <!-- Экран 4: Отзыв -->
+            <div class="screen screen-4">
+                <div class="nav-bar">
+                    <div class="back-btn">← Назад</div>
+                    <div class="title">Завершение работы</div>
+                </div>
+
+                <div class="review-content">
+                    <h3>Напишите небольшой отзыв</h3>
+                    <div class="review-textarea">
+                        <p>Исполнитель отлично справился со своей задачей и сделал всё точно в срок! Обязательно обращусь ещё. Рекомендую</p>
+                    </div>
+
+                    <h3>Оцените исполнителя</h3>
+                    <div class="rating-stars">
+                        <span class="star active">★</span>
+                        <span class="star active">★</span>
+                        <span class="star active">★</span>
+                        <span class="star active">★</span>
+                        <span class="star active">★</span>
+                    </div>
+                </div>
+
+                <div class="continue-btn">Завершить заказ</div>
+            </div>
+
+            <!-- Экран 5: Финальный успех -->
+            <div class="screen screen-5">
+                <div class="final-success">
+                    <div class="success-animation">
+                        <div class="checkmark">
+                            <div class="checkmark-stem"></div>
+                            <div class="checkmark-kick"></div>
+                        </div>
+                        <div class="confetti">
+                            <div class="confetti-piece"></div>
+                            <div class="confetti-piece"></div>
+                            <div class="confetti-piece"></div>
+                            <div class="confetti-piece"></div>
+                            <div class="confetti-piece"></div>
+                        </div>
+                    </div>
+                    
+                    <h2>Заказ выполнен!</h2>
+                    <p>Спасибо за использование нашего сервиса</p>
+                    
+                    <div class="stats">
+                        <div class="stat">
+                            <span class="stat-number">5.0</span>
+                            <span class="stat-label">Рейтинг</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">24ч</span>
+                            <span class="stat-label">Время выполнения</span>
+                        </div>
+                    </div>
+                    
+                    <div class="continue-btn">Создать новый заказ</div>
+                </div>
+            </div>
+
+            <!-- Нижняя навигация -->
+            <div class="bottom-nav">
+                <div class="nav-item">
+                    <div class="nav-icon">☑️</div>
+                </div>
+                <div class="nav-item">
+                    <div class="nav-icon">⚒️</div>
+                </div>
+                <div class="nav-item active">
+                    <div class="nav-icon">💬</div>
+                </div>
+                <div class="nav-item">
+                    <div class="nav-icon">👤</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

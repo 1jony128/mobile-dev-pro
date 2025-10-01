@@ -52,6 +52,7 @@
       }
     }
     </script>
+    <link rel="stylesheet" href="/style.css">
     <style>
         * {
             margin: 0;
@@ -59,19 +60,9 @@
             box-sizing: border-box;
         }
 
-        body {
-            font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            line-height: 1.6;
-            color: #ffffff;
-            background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
-            overflow-x: hidden;
-        }
+        body { overflow-x: hidden; }
 
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
+        .container { max-width: 800px; margin: 0 auto; padding: 0 20px; }
 
         /* Animated background */
         .bg-animation {
@@ -765,6 +756,44 @@
                     Главное помнить: лучшее приложение - то, которым вы действительно пользуетесь каждый день. Попробуйте несколько вариантов из нашего списка и найдите свой идеальный инструмент продуктивности!
                 </p>
             </article>
+        </div>
+    </section>
+
+    <!-- Contact Section (from main) -->
+    <section id="contact" class="contact" style="padding: 100px 0; background: rgba(255, 255, 255, 0.02); text-align: center;">
+        <div class="container" style="max-width: 1200px; margin: 0 auto; padding: 0 20px;">
+            <h2 class="section-title" style="text-align:center; font-size: 3rem; font-weight: 700; margin-bottom: 3rem; background: linear-gradient(135deg, #00d4ff, #ff00ff); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Свяжитесь с нами</h2>
+            <p style="margin-bottom: 3rem; font-size: 1.2rem; opacity: 0.8;">Готовы обсудить ваш проект? Напишите нам!</p>
+            <div class="contact-info" style="display: flex; justify-content: center; gap: 3rem; margin-bottom: 3rem; flex-wrap: wrap;">
+                <div class="contact-item" style="text-align: center; padding: 1.5rem; background: rgba(255, 255, 255, 0.05); border-radius: 15px; backdrop-filter: blur(20px); border: 1px solid rgba(255, 255, 255, 0.1); min-width: 200px;">
+                    <div style="font-size: 2rem; margin-bottom: 1rem;">✉️</div>
+                    <h4 style="margin-bottom: 0.5rem; color: #00d4ff;">Email</h4>
+                    <a href="mailto:esevcov097@gmail.com" style="color: rgba(255, 255, 255, 0.8); text-decoration: none; transition: color 0.3s ease;">esevcov097@gmail.com</a>
+                </div>
+                <div class="contact-item" style="text-align: center; padding: 1.5rem; background: rgba(255, 255, 255, 0.05); border-radius: 15px; backdrop-filter: blur(20px); border: 1px solid rgba(255, 255, 255, 0.1); min-width: 200px;">
+                    <div style="font-size: 2rem; margin-bottom: 1rem;">💬</div>
+                    <h4 style="margin-bottom: 0.5rem; color: #00d4ff;">Telegram</h4>
+                    <a href="https://t.me/evgeny_todogtd" target="_blank" style="color: rgba(255, 255, 255, 0.8); text-decoration: none; transition: color 0.3s ease;">@evgeny_todogtd</a>
+                </div>
+                <div class="contact-item" style="text-align: center; padding: 1.5rem; background: rgba(255, 255, 255, 0.05); border-radius: 15px; backdrop-filter: blur(20px); border: 1px solid rgba(255, 255, 255, 0.1); min-width: 200px;">
+                    <div style="font-size: 2rem; margin-bottom: 1rem;">🎯</div>
+                    <h4 style="margin-bottom: 0.5rem; color: #00d4ff;">Портфолио</h4>
+                    <a href="https://t.me/mobile_shevtsov" target="_blank" style="color: rgba(255, 255, 255, 0.8); text-decoration: none; transition: color 0.3s ease;">@mobile_shevtsov</a>
+                </div>
+            </div>
+            <form class="contact-form" action="https://formspree.io/f/myzplyjg" method="POST" accept-charset="UTF-8" style="max-width: 600px; margin: 0 auto; display: grid; gap: 1rem;">
+                <div class="form-group" style="display: grid; gap: 1rem; grid-template-columns: 1fr 1fr;">
+                    <input type="text" name="name" placeholder="Ваше имя" required style="padding: 15px; border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 10px; background: rgba(255, 255, 255, 0.05); color: #ffffff; font-size: 1rem; backdrop-filter: blur(10px);">
+                    <input type="email" name="email" placeholder="Email" required style="padding: 15px; border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 10px; background: rgba(255, 255, 255, 0.05); color: #ffffff; font-size: 1rem; backdrop-filter: blur(10px);">
+                </div>
+                <div class="form-group" style="display: grid; gap: 1rem; grid-template-columns: 1fr;">
+                    <input type="text" name="subject" placeholder="Тема сообщения" required style="padding: 15px; border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 10px; background: rgba(255, 255, 255, 0.05); color: #ffffff; font-size: 1rem; backdrop-filter: blur(10px);">
+                </div>
+                <div class="form-group" style="display: grid; gap: 1rem; grid-template-columns: 1fr;">
+                    <textarea name="message" rows="5" placeholder="Расскажите о вашем проекте..." required style="padding: 15px; border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 10px; background: rgba(255, 255, 255, 0.05); color: #ffffff; font-size: 1rem; backdrop-filter: blur(10px);"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary" style="justify-self: center; padding: 15px 30px; border: none; border-radius: 50px; font-size: 1rem; font-weight: 600; cursor: pointer; background: linear-gradient(135deg, #00d4ff, #ff00ff); color: white;">Отправить сообщение</button>
+            </form>
         </div>
     </section>
 
